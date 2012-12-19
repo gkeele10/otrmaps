@@ -1,0 +1,20 @@
+<% if user_signed_in? %>
+<div class="center hero-unit">
+  <%= link_to "Go to My OTR Map!", map_path, 
+                                class: "btn btn-large btn-primary" %>
+<% else %>
+</div>
+
+<div class="center hero-unit">
+    <h1>Welcome to OTR Fleet Media Maps</h1>
+
+    <h2>
+      You've found the home page for the
+      <a href="http://otrmaps.com/">OTR Maps</a>
+      vehicle tracking application.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+<% end %>

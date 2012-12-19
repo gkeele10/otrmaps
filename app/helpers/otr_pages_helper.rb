@@ -1,0 +1,2 @@
+module OtrPagesHelper
+end
